@@ -66,7 +66,7 @@
                       class="form-control" name="fourrure" id="fourrure" aria-describedby="helpId" placeholder="fourrure">
                    </div>
                    <div class="bouton d-flex justify-content-between">
-                          <input name="valider" id="" class="btn btn-primary" type="submit" value="valider">
+                          <input name="validerA" id="" class="btn btn-primary" type="submit" value="valider">
                       <button class="btn btn-light my-2 my-sm-0 d-block" type="button"><a href="dashboard.php" >Retour</a></button>
 
                    </div>

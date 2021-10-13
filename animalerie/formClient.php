@@ -1,4 +1,5 @@
 
+ 
 
 <!doctype html>
 <html lang="en">
@@ -11,37 +12,50 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="bootstrap.css">
-  </head>
+
+    <link rel="stylesheet" href="style.css">
+</head>
   <body>
 
-
-  <nav class="navbar navbar-expand-sm navbar-dark bg-primary  ">
-            <a class="navbar-brand" href="#">Dr PAUL</a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId ">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                    <form class="form-inline my-2 my-lg-0 d-flex ">
-                    <button class="btn btn-light my-2 my-sm-0 d-block" type="button"><a href="formProd.php" >ANIMAL</a></button>
-                    <button class="btn btn-light my-2 my-sm-0 d-block" type="button"><a href="formClient.php" >CLIENT</a></button>
-                </form>
-             
-                     </li>
+        <div class="container w-50">
+            <form action="traitement.php" method="post" class= "m-auto">
+                    <h1 >CLIENT</h1>
                     
-                    
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <button class="btn btn-light my-2 my-sm-0 d-block" type="button"><a href="index.php" >DECONNEXION</a></button>
-                </form>
-            </div>
 
-            </nav>
+                <div class="form-group w-50">
+                    <label for="nom">nom</label>
+                    <input type="text"
+                      class="form-control" name="nom" id="nom" placeholder="nom">
+                      
+                   </div>
+                <div class="form-group w-50" >
+                    <label for="telephone">telephone</label>
+                    <input type="number"
+                      class="form-control" name="telephone" id="telephone"   placeholder="telephone">
+                   </div>
+                <div class="form-group w-50" >
+                    <label for="adresse">adresse</label>
+                    <input type="text"
+                      class="form-control" name="adresse" id="adresse"   placeholder="adresse">
+                   </div>
+                <div class="form-group w-50">
+                    <label for="animal">animal</label>
+                    <input type="text"
+                      class="form-control" name="animal" id="animal" aria-describedby="helpId" placeholder="animal">
+                   </div>
+           
+                   <div class="bouton d-flex justify-content-between">
+                   <input name="validerC" id="" class="btn btn-primary" type="submit" value="valider">
+                      <button class="btn btn-light my-2 my-sm-0 d-block" type="button"><a href="dashboard.php" >Retour</a></button>
+
+                   </div>
+
+            </form>
+           
+        </div>
 
 
-
+        
 
   <div class="container">
       <table class="table">
@@ -49,13 +63,11 @@
               <tr>
                   <th>reference</th>
                   <th>nom</th>
-                  <th>race</th>
-                  <th>categorie</th>
-                  <th>poids</th>
-                  <th>age</th>
-                  <th>cout</th>
-                  <th>taille</th>
-                  <th>fourrure</th>
+                  <th>Telephone</th>
+                  <th>Adresse</th>
+                  <th>Animal</th>
+
+                 
 
 
 
@@ -92,6 +104,9 @@
           </tbody>
       </table>
   </div>
+
+
+
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
